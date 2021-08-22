@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Raleway&family=Rubik&display=swap");
+/*Sass Template*/
+/*Global classes*/
+button.button:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+header.header{
+  background: red;
+}
+
+/*Typography Classes*/
+.font-Baloo {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.font-rale {
+  font-family: "Raleway", cursive;
+}
+
+.font-rubik {
+  font-family: "Rubik", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+/*color classes*/
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background: #3c90c0;
+}
+
+.color-second {
+  color: #00A5C4;
+}
+
+.color-second-bg {
+  background: #00A5C4;
+}
+
+.color-yellow {
+  color: #FFD289;
+}
+
+.color-yellow-bg {
+  background: #FFD289;
+}
+
+/*  top sale template   */
+.top-sale .owl-carousel .item .product a {
+    overflow: hidden;
+}
+.top-sale .owl-carousel .item .product img {
+    transition: transform 0.5s ease;
+}
+.top-sale .owl-carousel .item .product img:hover {
+    transform: scale(1.1);
+}
+.top-sale .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+.top-sale .owl-carousel .owl-nav button.owl-prev {
+    left: 0;
+}
+.top-sale .owl-carousel .owl-nav button.owl-prev span,
+.top-sale .owl-carousel .owl-nav button.owl-next span {
+    font-size: 35px;
+    color: #003859;
+    padding: 0 1rem;
+}
+.top-sale .owl-carousel .owl-nav button.owl-prev span {
+    margin-left: -4rem;
+}
+.top-sale .owl-carousel .owl-nav button.owl-next {
+    right: 0;
+}
+.top-sale .owl-carousel .owl-nav button.owl-next span {
+    margin-right: -4rem;
+}
+
+/*special fprice template*/
+
+#special-price .grid .grid-item{
+  
+margin-right: 1.2px;
+margin-top: 1rem;
+
+}
+/*# sourceMappingURL=style.css.map */
+
+
+
+/*--- Viewport less then or equal to 1130px--- */
+@media only screen and (max-width:1130px){
+  .site-content .post-content > .post-image .post-info{
+      left:2rem !important;
+      bottom: 1.2rem !important;
+      border-radius: 0% !important;
+  }
+  .site-content .sidebar .popular-post .post-info{
+      display: none !important;
+
+  }
+  footer.footer .container{
+      grid-template-columns: repeat(2,1fr);
+  }
+} 
+/*--X-- Viewport less then or equal to 1130px--X-- */
+
+/*--- Viewport less then or equal to 750px -----*/
+
+@media only screen and (max-width:750px){
+  .nav .nav-menu, .nav .nav-items{
+      flex-direction: column;
+  }
+  .nav .toggle-collapse{
+      display: initial;
+  }
+  main .site-content{
+      grid-template-columns: 100%;
+  }
+  footer.footer .container{
+      grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+/*---  X--Viewport less then or equal to 750px --- X--- */
+
+/*----- Viewport less then or equal to 520px----- */
+@media only screen and (max-width:520px){
+main .blog{
+  height: 125vh;
+}
+.site-content .post-content > .post-image .post-info{
+  display: none;
+}
+footer.footer .container > div{
+  padding: 1rem .9rem !important;
+}
+footer .rights{
+  padding: 0 1 .4rem;
+  text-align: center;
+}
+nav .toggle-collapse{
+  width: 80% !important;
+}
+}/*aos website check */
+/*---  X--Viewport less then or equal to 520px --- X--- */
+
+
+/*input css*/
+
+
+.lh-condensed { line-height: 1.25; }
+
+
+.owl-prev span, .owl-next span {
+  color: #82ae46;
+}
+
+.owl-prev span:hover, 
+.owl-next span:hover {
+  color: #8199A3;
+}
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.owl-prev {
+  left: 7px;
+}
+
+.owl-next {
+  right: 7px;
+}
+.filterDiv {
+     float: left;
+     color: #ffffff;
+     text-align: center;
+     display: none;
+   }
+   
+   .showss {
+     display: block;
+   }
+   
+   .container {
+     overflow: hidden;
+   
+   }
+   
+   /* Style the buttons */
+   .btn {
+     padding: 10px 10px;
+     cursor: pointer;
+     color: black;
+   }
+   
+   .btn:hover {
+       background-color:#82ae46;
+        color: white!important;
+       font-weight: bold;
+   
+   }.btn.active:focus{
+       background-color:#82ae46;
+       color: white;
+       
+   }/*
+   .btn.active {
+     color: black;
+     background-color:#82ae46;
+   }*/
+   .carty{ 
+       border-radius:5px;
+       background: #45cabf;
+       border: 1px solid #03ffea;
+       color: #fff;
+   }
+   .carty:hover{
+       
+       border: 1px solid #45cabf;
+       background: transparent;
+       color: #45cabf;
+   }
